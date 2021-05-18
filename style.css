@@ -16,14 +16,14 @@ html {
 
 body {
   font-size: 1rem;
-  line-height: 1;
 }
 
-h1,
 h2,
 h3 {
   font-family: "Montserrat Alternates", sans-serif;
   color: #0e396d;
+  line-height: 1.4;
+  margin-bottom: 0.5rem;
 }
 
 h2 {
@@ -41,15 +41,24 @@ ul {
 
 a,
 a:visited {
-  color: #a3177a;
+  color: #214e24;
+}
+
+a:hover,
+a:active {
+  color: #3c8341;
 }
 
 header h1 {
-  font-family: "Niconne", sans-serif;
-  font-size: 4.5rem;
-  color: #ed4cbe;
-  line-height: 1.1;
-  margin-bottom: 1rem;
+  text-indent: -5000rem;
+  overflow: hidden;
+  height: 146px;
+  max-width: 464px;
+  background-image: url(images/logo-wow.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin: 0 auto 20px;
 }
 
 header h2 {
@@ -67,8 +76,9 @@ header {
 }
 
 .banner {
+  font-family: "Montserrat Alternates", sans-serif;
   position: relative;
-  background-color: #a3177a;
+  background-color: #3c8341;
   color: #fff;
   text-align: center;
   padding: 20px;
@@ -84,17 +94,17 @@ header {
   top: 20px;
   bottom: -20px;
   width: 40px;
-  background: #a3177a;
+  background: #214e24;
 }
 
 .banner::before {
-  left: -41px;
-  border-right: 1px solid #5a0c43;
+  left: -40px;
+  border-right: 1px solid #133516;
 }
 
 .banner::after {
-  right: -41px;
-  border-left: 1px solid #5a0c43;
+  right: -40px;
+  border-left: 1px solid #133516;
 }
 
 .banner p:last-child {
@@ -109,8 +119,8 @@ header {
 .content {
   background-color: #fff;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
-  padding: 40px;
-  margin: 0 40px;
+  padding: 40px 20px;
+  margin: 0 20px;
   max-width: 860px;
   line-height: 1.8;
 }
@@ -121,24 +131,16 @@ header {
 
 footer {
   margin: 0 auto;
-  padding: 1rem 2rem;
-  max-width: 900px;
+  padding: 20px 20px;
+  max-width: 940px;
   font-size: 0.875rem;
   color: #666;
 }
 
-footer ul {
-  list-style: none;
-}
-
-.logo_wow {
-  width: 222px;
-  height: 97px;
-  background-image: url(images/logo-wow.png);
-  background-repeat: no-repeat;
-  background-size: 222px 97px;
-  text-indent: -5000rem;
-  overflow: hidden;
+@media (min-width: 540px) {
+  .content {
+    padding: 40px;
+  }
 }
 
 @media (min-width: 768px) {
