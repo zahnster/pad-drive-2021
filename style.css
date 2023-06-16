@@ -18,6 +18,7 @@ body {
   font-size: 1rem;
 }
 
+h1,
 h2,
 h3 {
   font-family: "Montserrat Alternates", sans-serif;
@@ -49,16 +50,15 @@ a:active {
   color: #3c8341;
 }
 
-header h1 {
-  text-indent: -5000rem;
-  overflow: hidden;
-  height: 146px;
+.logo {
+  padding-top: 160px;
   max-width: 464px;
   background-image: url(images/logo-wow.png);
+  background-position: center top;
   background-repeat: no-repeat;
-  background-position: center;
   background-size: contain;
   margin: 0 auto 20px;
+  font-size: 1.5rem;
 }
 
 header h2 {
